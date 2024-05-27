@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" id="home-link"><img src="image.jpg" alt="Logo" class="logo"></a>
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="shop-link">Shop</a>
+            <a href="#" id="contact-link">Contact</a>
+            <a href="cart.html" id="cart-link">Cart</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home-section" class="section">
+            <h2>Welcome to My E-commerce Store</h2>
+            <p>Explore our products and find the best deals.</p>
+            <p>In order to explore more go to the Shop tab.</p>
+        </section>
+        
+        <section id="shop-section" class="section" style="display: none;">
+            <h2>Products</h2>
+            <input type="text" id="search-bar" placeholder="Search for products...">
+            <div id="product-list">
+                <div class="product" data-id="1" data-name="Laptop" data-price="29999.00" data-image="HP-Laptop-494267989-i-1-1200Wx1200H-300Wx300H">
+                    <img src="HP-Laptop-494267989-i-1-1200Wx1200H-300Wx300H.jpg" alt="Product 1">
+                    <h3>Laptop</h3>
+                    <p>Price: ₹29999.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2" data-name="Head Phones" data-price="699" data-image="images.jpg">
+                    <img src="images.jpg" alt="Head Phones">
+                    <h3>Head Phones</h3>
+                    <p>Price: ₹699.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2" data-name="Mobile Phone" data-price="8999.00" data-image="633ac057a9a3195e41204746-5-45-inch-smartphone-hd-full-screen">
+                    <img src="633ac057a9a3195e41204746-5-45-inch-smartphone-hd-full-screen.jpg" alt="Mobile Phone">
+                    <h3>Mobile Phone</h3>
+                    <p>Price:₹8999.00 </p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <button id="go-to-cart" class="go-to-cart">Go to Cart</button>
+        </section>
+        
+        <section id="contact-section" class="section" style="display: none;">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out to us at contact@ecommerce.com.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
